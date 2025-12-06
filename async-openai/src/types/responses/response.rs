@@ -1703,7 +1703,7 @@ pub enum WebSearchToolCallAction {
     /// Action type "open_page" - Opens a specific URL from search results.
     OpenPage(WebSearchActionOpenPage),
     /// Action type "find": Searches for a pattern within a loaded page.
-    Find(WebSearchActionFind),
+    FindInPage(WebSearchActionFind),
 }
 
 /// Web search tool call output.
