@@ -1721,7 +1721,7 @@ pub enum WebSearchToolCallAction {
 pub struct WebSearchToolCall {
     /// An object describing the specific action taken in this web search call. Includes
     /// details on how the model used the web (search, open_page, find, find_in_page).
-    pub action: WebSearchToolCallAction,
+    pub action: Option<WebSearchToolCallAction>,
     /// The unique ID of the web search tool call.
     pub id: String,
     /// The status of the web search tool call.
