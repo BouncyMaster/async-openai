@@ -1698,7 +1698,7 @@ pub struct WebSearchActionOpenPage {
 #[derive(Debug, Serialize, Deserialize, Clone, PartialEq)]
 pub struct WebSearchActionFind {
     /// The URL of the page searched for the pattern.
-    pub url: String,
+    pub url: Option<String>,
     /// The pattern or text to search for within the page.
     pub pattern: String,
 }
